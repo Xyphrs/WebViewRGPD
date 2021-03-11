@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recyclerURLFragment">
+
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.webview.ui.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/addUrlFragment"
+        android:name="com.example.webview.ui.AddUrlFragment"
+        android:label="fragment_add_url"
+        tools:layout="@layout/fragment_add_url" />
+    <fragment
+        android:id="@+id/recyclerURLFragment"
+        android:name="com.example.webview.ui.RecyclerURLFragment"
+        android:label="fragment_recycler_u_r_l"
+        tools:layout="@layout/fragment_recycler_u_r_l" >
+        <action
+            android:id="@+id/action_recyclerURLFragment_to_addUrlFragment"
+            app:destination="@id/addUrlFragment" />
+        <action
+            android:id="@+id/action_recyclerURLFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+</navigation>

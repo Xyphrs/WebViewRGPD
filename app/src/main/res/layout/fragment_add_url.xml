@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddUrlFragment"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/apodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/apodo"
+        android:autofillHints="APODO"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:hint="@string/url"
+        android:inputType="textUri"
+        android:autofillHints="URL" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/a_adir"/>
+
+</LinearLayout>
